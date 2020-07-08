@@ -1,2 +1,2 @@
-# betterbeans
-Clon de la página better beans
+# Clon de la página Better Beans
+
