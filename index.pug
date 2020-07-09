@@ -1,1 +1,26 @@
 extend components/theme.pug
+block content
+    section.main
+        each title in title_main
+            h1=title
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt, molestiae blanditiis sint consectetur.
+        button Shop Now
+    
+    section.benefits
+        p.section_description=section_main[0]
+        h2.section_title=section_title[0]
+        ul
+            +benefit_list(benefits_image_url[0], benefits[0])
+            +benefit_list(benefits_image_url[1], benefits[1])
+            +benefit_list(benefits_image_url[2], benefits[2])
+    
+    section.goodies
+        p.section_description=section_main[1]
+        h2.section_title=section_title[2]
+        +goodie_box(goodies_image_url[0], goodies_name[0], '$10.75')
+        +goodie_box(goodies_image_url[1], goodies_name[1], '$11.75')
+        +goodie_box(goodies_image_url[2], goodies_name[2], '$8.75')
+        +goodie_box(goodies_image_url[3], goodies_name[3], '$10.00')
+        +goodie_box(goodies_image_url[4], goodies_name[4], '$9.50')
+
+    section.testimonials

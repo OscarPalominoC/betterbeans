@@ -1,3 +1,36 @@
--var titles = "Better Beans Clone"
+// Variables
+-var title = "Better Beans Clone"
 -var links = ["Products", "Our Story", "Blog", "Contact"]
 -var footer_links = ["Contact Us", "About", "Terms", "FAQ"]
+-var title_main = ["Better beans.", "Better coffee.", "Better planet."]
+-var section_main = ["Benefits", "Products", "Clients' Testimonial"]
+-var section_title = ["Why Better Beans?", "Our Popular Goodies", "What Coffee Lovers Say About Us?"]
+-var benefits_image_url = ["imagen1", "imagen2", "imagen3"]
+-var benefits = ["100% Recycled Materials", "Fresh From The Field", "10% Donated From Each Sale for Trees"]
+-var goodies_image_url = ["goodie1", "goodie2", "goodie3", "goodie4", "goodie5"]
+-var goodies_name = ["blended love", "fruity joy", "lovely delight", "morning flavor", "cold delight"]
+
+
+// Mixins
+mixin benefit_list(image, content)
+    li
+        img(src="/images/"+image)
+        p=content
+
+mixin goodie_box(image, name, price)
+    .box
+        figure
+            img(src="/images/"+image)
+        p.goodie_name=name
+        p.goodie_price=price
+        
+mixin testimonial(image, content, name, rank)
+    .card
+        figure
+            img(image)
+        .content
+            p=content
+            .name_rank
+                p.name=name
+                p.rank=rank
+
