@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #128077
+}
+
+body {
+    display: grid;
+    width: 100%;
+    grid-template: 90px .5fr .2fr .4fr .3fr .3fr 200px / 33% 34% 33%;
+    grid-template-areas:    "header header header"
+                            "main main main"
+                            "benefits benefits benefits"
+                            "goodies goodies goodies"
+                            "testimonials testimonials testimonials"
+                            "discount discount discount"
+                            "footer footer footer";
+}
+
+
+/* General Config Section */
+.section_description {
+    color: #f28f72;
+}
+.content {
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* Header section */
+header {
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "logo nav-bar actions";
+}
+header figure {
+    grid-area: logo;
+    height: inherit;
+    margin: 5px auto;
+}
+header figure img{
+    height: 90%;
+}
+header nav {
+    grid-area: nav-bar;
+    text-align: center;
+    margin: auto;
+
+}
+header ul {
+    display: flex;
+    margin: auto;
+}
+header ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+header .options {
+    grid-area: actions;
+    display: flex;
+}
+
+/* Main section */
+.main {
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fbd9cf;
+    border-radius: 0 0 100px 0;
+}
+.main .content_main {
+    width: 50%;
+    margin-left:15%;
+    text-align: left;
+}
+.main .content_main h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #128077;
+}
+.main .content_main p {
+    font-size: 20px;
+    margin: 30px 0;
+    
+}
+.main .content_main a {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #f68e71;
+    color:white;
+}
+
+.main figure {
+    width: 100%
+}
+.main figure img {
+    width: 80%;
+}
+
+/* Benefits section */
+.benefits {
+    grid-area: benefits;
+}
+.benefits ul {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.benefits ul li {
+    max-width: 300px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 20px;
+    font-size: 1.3em;
+}
+.benefits ul li p{
+    margin: auto 15px;
+}
+
+
+/* Products section */
+.goodies {
+    grid-area: goodies;
+    border: 1px solid red;
+}
+
+/* Testimonials section */
+.testimonials {
+    grid-area: testimonials;
+    border: 1px solid red;
+}
+
+/* Discount Section */
+.discounts {
+    grid-area: discount;
+    border: 1px solid red;
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fbd9cf;
+    border-radius: 0 0 100px 0;
+}
+
+/* Footer section */
+footer {
+    font-size: 1em;
+    grid-area: footer;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "logo links social";
+}
+footer h1 {
+    grid-area: logo;
+}
+footer ul {
+    grid-area: links;
+    display: flex;
+    list-style: none;
+}
+footer li {
+    margin: auto 15px;
+}
+footer .social_mdia {
+    grid-area: social;
+    display: flex;
+}
