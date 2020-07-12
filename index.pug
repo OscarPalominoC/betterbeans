@@ -34,8 +34,9 @@ block content
         .content
             p.section_description=section_main[2]
             h2.section_title=section_title[2]
-            each index in [0, 1, 2, 3]
-                +testimonial(testimonial_image_url[index], "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, veniam maiores! Dolorem ducimus laboriosam facilis sequi iusto deleniti fugit! Rem minima architecto laborum veniam facilis fugit soluta impedit id quas.", testimonial_name[index], testimonial_rank[index])
+            .cards
+                each index in [0, 1, 2, 3]
+                    +testimonial(testimonial_image_url[index], "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, veniam maiores! Dolorem ducimus laboriosam facilis sequi iusto deleniti fugit! Rem minima architecto laborum veniam facilis fugit soluta impedit id quas.", testimonial_name[index], testimonial_rank[index])
     
     section.discounts
         figure.discount_container

@@ -150,19 +150,17 @@ header .options {
     border: 1px solid rgba(0, 0, 0, .1);
     margin: 0 20px;
 }
-.goodies .products .box figure:hover {
-    background-color: #fbd9cf;
-}
 .goodies .products .box figure {
     width: 100%;
     height: 100%;
-    position: relative;
+}
+.goodies .products .box figure:hover {
+    background-color: #fbd9cf;
 }
 .goodies .products .box figure img {
-    height: 100%;
+    width: 100%;
     overflow: hidden;
-    position: absolute;
-    transform: translate(-30px);
+    transform: translateY(30px);
 }
 .goodies .products .box .goodie_price{
     color: #f28f72;
@@ -174,11 +172,31 @@ header .options {
     padding: 15px 25px;
     border: 1px solid #128077;
 }
+.goodies a:hover {
+    background-color: #128077;
+    color: #fff;
+}
 
 /* Testimonials section */
 .testimonials {
     grid-area: testimonials;
     border: 1px solid red;
+}
+.testimonials .cards {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-columns: repeat(4, 400px);
+    grid-gap: 20px;
+    height: 450px;
+    overflow: auto;
+}
+.testimonials .card {
+    width: 500px;
+    height: 200px;
+    border: 1px solid blue;
+    margin: 0 1.3em;
+
 }
 
 /* Discount Section */
