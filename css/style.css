@@ -185,7 +185,7 @@ header .options {
     display: grid;
     grid-template-columns: repeat(4, 500px);
     grid-gap: 30px;
-    height: 400px;
+    height: 250px;
     overflow: auto;
 }
 .testimonials .cards .card {
@@ -220,6 +220,14 @@ header .options {
 }
 .testimonials .cards .card .content .name_rank {
     display: flex;
+    font-size: 1em;
+    font-weight: 700;
+}
+.testimonials .cards .card .content .name_rank p {
+    margin: 10px;
+}
+.testimonials .cards .card .content .name_rank .rank {
+    color: #f28f72;
 }
 
 /* Discount Section */
