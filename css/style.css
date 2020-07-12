@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Indie+Flower&family=Lato:wght@300&display=swap');
+
 /*
 Flaticon icon font: Flaticon
 Creation date: 12/07/2020 16:02
@@ -42,7 +44,8 @@ margin-left: 20px;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #128077
+    color: #128077;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -72,6 +75,10 @@ h2 {
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
 }
 
 
@@ -319,7 +326,7 @@ header .options {
 .discounts .content .actions input {
     padding: 10px;
     width: 200px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 /* Footer section */
 footer {
@@ -343,7 +350,10 @@ footer ul {
 footer li {
     margin: auto 15px;
 }
-footer .social_mdia {
+footer .social_media {
     grid-area: social;
     display: flex;
+}
+footer .social_media ul li a i {
+    font-size: 50px;
 }
